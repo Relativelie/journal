@@ -29,6 +29,12 @@
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "react/jsx-indent-props": "off",
         "react/jsx-indent": "off",
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "import/prefer-default-export": "off",
+        "max-len": "off",
+        "@typescript-eslint/default-param-last": "off",
+        "arrow-body-style": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "react/function-component-definition": "off"
     }
 }
