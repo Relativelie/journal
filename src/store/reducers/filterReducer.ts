@@ -21,15 +21,15 @@ export const filterReducer = (
 ): FilterState => {
     switch (action.type) {
         case FilterActionTypes.TURN_ON_FILTER: {
-            const filteredItems = [...action.data];
+            const filteredItems:any = [...action.data];
             const filteringFlag = action.filterBy;
             if (filteredItems.length !== 0) {
                 if (!Number.isNaN(parseInt(filteredItems[0][filteringFlag], 10))) {
                     filteredItems.sort(
-                        (first, second) => first[filteringFlag] - second[filteringFlag],
+                        (first:any, second: any) => first[filteringFlag] - second[filteringFlag],
                     );
                 } else {
-                    filteredItems.sort((first, second) => first[filteringFlag].localeCompare(second[filteringFlag]));
+                    filteredItems.sort((first:any, second:any) => first[filteringFlag].localeCompare(second[filteringFlag]));
                 }
             }
 

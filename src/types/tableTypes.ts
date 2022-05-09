@@ -1,5 +1,7 @@
+import { DataType } from './dataType';
+
 export interface TableState {
-    content: any[],
+    content: DataType[],
 }
 
 export enum TableActionTypes {
@@ -8,7 +10,7 @@ export enum TableActionTypes {
 
 interface SaveTableContent {
     type: TableActionTypes.SAVE_TABLE_CONTENT,
-    value: any[]
+    value: DataType[]
 }
 
 export type TableAction =

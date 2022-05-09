@@ -10,16 +10,24 @@ describe('pagination actions', () => {
     });
 
     test('change paginated list', () => {
-        expect(changePaginatedList([{ id: 11 }])).toEqual({
+        expect(changePaginatedList([{
+            id: 11, userId: 1, title: 'fv', body: 'hh',
+        }])).toEqual({
             type: PaginationActionTypes.CHANGE_PAGINATED_LIST,
-            data: [{ id: 11 }],
+            data: [{
+                id: 11, userId: 1, title: 'fv', body: 'hh',
+            }],
         });
     });
 
     test('calculate paginate list amount', () => {
-        expect(calcListAmount([{ id: 11 }])).toEqual({
+        expect(calcListAmount([{
+            id: 11, userId: 1, title: 'fv', body: 'hh',
+        }])).toEqual({
             type: PaginationActionTypes.CALC_LIST_AMOUNT,
-            data: [{ id: 11 }],
+            data: [{
+                id: 11, userId: 1, title: 'fv', body: 'hh',
+            }],
         });
     });
 });

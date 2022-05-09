@@ -1,3 +1,4 @@
+import { DataType } from '../../types/dataType';
 import { PaginationActionTypes, PaginationAction } from '../../types/paginationTypes';
 
 export const changeCurrentPage = (to: number): PaginationAction => ({
@@ -5,12 +6,12 @@ export const changeCurrentPage = (to: number): PaginationAction => ({
     to,
 });
 
-export const changePaginatedList = (data: any): PaginationAction => ({
+export const changePaginatedList = (data: DataType[]): PaginationAction => ({
     type: PaginationActionTypes.CHANGE_PAGINATED_LIST,
     data,
 });
 
-export const calcListAmount = (data: any): PaginationAction => ({
+export const calcListAmount = (data: DataType[]): PaginationAction => ({
     type: PaginationActionTypes.CALC_LIST_AMOUNT,
     data,
 });

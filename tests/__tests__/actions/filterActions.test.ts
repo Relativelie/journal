@@ -3,10 +3,14 @@ import { FilterActionTypes } from '../../../src/types/filterTypes';
 
 describe('filter actions', () => {
     test('action to turn on filter', () => {
-        expect(turnOnFilter('title', [{ title: 'l' }])).toEqual({
+        expect(turnOnFilter('title', [{
+            id: 1, userId: 2, title: 'ffv', body: 'hgh',
+        }])).toEqual({
             type: FilterActionTypes.TURN_ON_FILTER,
             filterBy: 'title',
-            data: [{ title: 'l' }],
+            data: [{
+                id: 1, userId: 2, title: 'ffv', body: 'hgh',
+            }],
         });
     });
 

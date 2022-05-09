@@ -1,6 +1,7 @@
+import { DataType } from '../../types/dataType';
 import { FilterAction, FilterActionTypes } from '../../types/filterTypes';
 
-export const turnOnFilter = (filterBy: string, data: any): FilterAction => ({
+export const turnOnFilter = (filterBy: string, data: DataType[]): FilterAction => ({
     type: FilterActionTypes.TURN_ON_FILTER,
     filterBy,
     data,

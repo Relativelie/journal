@@ -1,10 +1,11 @@
 import { FC } from 'react';
 import filterImage from '../../../assets/images/filterImage.png';
+import { FilterObj } from '../../../types/filterTypes';
 import './TableHead.scss';
 
 type Props = {
     filtering: Function,
-    allFilters: any[],
+    allFilters: FilterObj[],
 };
 
 export const TableHead: FC<Props> = ({ filtering, allFilters }) => {

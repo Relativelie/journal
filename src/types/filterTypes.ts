@@ -1,7 +1,15 @@
+import { DataType } from './dataType';
+
+export type FilterObj = {
+    id: number,
+    attributeName: string,
+    headName: string
+};
+
 export interface FilterState {
-    filteredList: any[],
+    filteredList: DataType[],
     activeFilter: string,
-    allFilters: object[],
+    allFilters: FilterObj[],
     isFiltered: boolean,
 }
 
@@ -17,7 +25,7 @@ interface TurnOffFilter {
 interface TurnOnFilter {
     type: FilterActionTypes.TURN_ON_FILTER,
     filterBy: string,
-    data: any
+    data: DataType[]
 }
 
 export type FilterAction =

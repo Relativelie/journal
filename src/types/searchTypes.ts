@@ -1,5 +1,7 @@
+import { DataType } from './dataType';
+
 export interface SearchState {
-    searchList: any[],
+    searchList: DataType[],
     searchingItem: string
 }
 
@@ -9,7 +11,7 @@ export enum SearchActionTypes {
 
 interface Search {
     type: SearchActionTypes.SEARCH,
-    data: any,
+    data: DataType[],
     searchingFlag: string
 }
 

@@ -1,11 +1,12 @@
 import { FC, MutableRefObject, useRef } from 'react';
 import { useActions } from '../../hooks/useActions';
 import searchImage from '../../assets/images/search.png';
+import { DataType } from '../../types/dataType';
 
 import './Search.scss';
 
 type Props = {
-    data: any[]
+    data: DataType[]
 };
 
 export const Search:FC<Props> = ({ data }) => {

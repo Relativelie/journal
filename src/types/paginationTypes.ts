@@ -1,8 +1,10 @@
+import { DataType } from './dataType';
+
 export interface PaginationState {
     currentPage: number,
     allPages: number,
     itemsPerPage: number,
-    paginatedList: any[],
+    paginatedList: DataType[],
 }
 
 export enum PaginationActionTypes {
@@ -18,12 +20,12 @@ interface ChangeCurrentPage {
 
 interface ChangePaginatedList {
     type: PaginationActionTypes.CHANGE_PAGINATED_LIST,
-    data: any
+    data: DataType[]
 }
 
 interface CalcPaginationAmount {
     type: PaginationActionTypes.CALC_LIST_AMOUNT,
-    data: any
+    data: DataType[]
 }
 
 export type PaginationAction =
