@@ -24,6 +24,7 @@ export const TableHead: FC<Props> = ({ filtering, allFilters }) => {
                                 onClick={(e) => filtering(e.target)}
                                 onKeyUp={(e) => filtering(e.target)}
                                 data-filterby={attributeName}
+                                data-testid="table head"
                                 role="button"
                                 tabIndex={0}
                             />

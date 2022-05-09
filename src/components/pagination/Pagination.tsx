@@ -35,7 +35,9 @@ export const Pagination = () => {
         if (type !== 'other') {
             value = paginateOptions[type];
         } else value = parseInt(elem.innerText, 10);
-        changeCurrentPage(value);
+        if (value !== 0 && value !== allPages + 1) {
+            changeCurrentPage(value);
+        }
     };
 
     const paginateItemClass = (value: number) => {

@@ -8,25 +8,26 @@ import { Table } from '../table/Table';
 import { TableBody } from '../table/tableBody/TableBody';
 import { TableHead } from '../table/tableHead/TableHead';
 import './App.scss';
+import { LoadingSpinner } from '../loadingSpinner/LoadingSpinner';
 
 function App() {
-    const { content } = useTypedSelector(
-        (tableState) => tableState.tableReducer,
-    );
+    const { content } = useTypedSelector((tableState) => tableState.tableReducer);
     const { searchingItem, searchList } = useTypedSelector(
         (searchState) => searchState.searchReducer,
     );
-    const { getResult } = useTypedSelector(
-        (requestState) => requestState.sendRequestReducer,
-    );
+    const {
+        getResult,
+        requestErrorText,
+        isRequestFatal,
+        isRequestError,
+        errorCode,
+        isRequestLoading,
+    } = useTypedSelector((requestState) => requestState.sendRequestReducer);
     const { paginatedList, currentPage } = useTypedSelector(
         (paginateState) => paginateState.paginationReducer,
     );
     const {
-        isFiltered,
-        filteredList,
-        activeFilter,
-        allFilters,
+        isFiltered, filteredList, activeFilter, allFilters,
     } = useTypedSelector((filterState) => filterState.filterReducer);
     const {
         sendGet,
@@ -89,16 +90,26 @@ function App() {
         }
     };
 
-    return (
-        <div className="App">
-            <Search data={content} />
-            <Table>
-                <TableHead filtering={filtering} allFilters={allFilters} />
-                <TableBody paginatedContent={paginatedList} />
-            </Table>
-            <Pagination />
-        </div>
-    );
+    if (isRequestLoading || isRequestFatal || isRequestError) {
+        return (
+            <div className="App">
+                {isRequestLoading && <LoadingSpinner />}
+                {isRequestError && <p>{`${requestErrorText} Error code: ${errorCode}`}</p>}
+                {isRequestFatal && <p>{requestErrorText}</p>}
+            </div>
+        );
+    } else {
+        return (
+            <div className="App">
+                <Search data={content} />
+                <Table>
+                    <TableHead filtering={filtering} allFilters={allFilters} />
+                    <TableBody paginatedContent={paginatedList} />
+                </Table>
+                <Pagination />
+            </div>
+        );
+    }
 }
 
 export default App;

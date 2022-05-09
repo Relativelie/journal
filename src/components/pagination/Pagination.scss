@@ -28,3 +28,17 @@
     @include textStyle($fontSize: 24px, $fontColor: $textFontColor);
     cursor: pointer
 }
+
+@media all and (max-width: 550px) {
+    .pagination {
+        padding: 0 10px;
+    }
+
+    .pagination__number, .pagination__option {
+        font-size: 15px;
+    }
+
+    .pagination__numbers {
+        gap: 5px
+    }
+}

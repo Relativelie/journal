@@ -21,6 +21,6 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src", "webpack.dev.config.ts", "tests/**/*.ts"
+, "tests/__tests__/reducers/filterReducer.test.ts"  ]
 }

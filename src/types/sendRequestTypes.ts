@@ -3,7 +3,6 @@ export interface SendRequestState {
     isRequestSuccess: boolean,
     isRequestFatal: boolean,
     isRequestError: boolean,
-    requestSuccessText: string,
     requestErrorText: string,
     errorCode: null | number,
     getResult: any[],

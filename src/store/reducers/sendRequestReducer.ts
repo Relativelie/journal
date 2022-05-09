@@ -5,7 +5,6 @@ const initialState: SendRequestState = {
     isRequestSuccess: false,
     isRequestFatal: false,
     isRequestError: false,
-    requestSuccessText: 'Форма отправлена',
     requestErrorText: 'Something went wrong...',
     errorCode: null,
     getResult: [],
