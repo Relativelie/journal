@@ -94,7 +94,9 @@ function App() {
         return (
             <div className="App">
                 {isRequestLoading && <LoadingSpinner />}
-                {isRequestError && <p>{`${requestErrorText} Error code: ${errorCode}`}</p>}
+                {isRequestError && (
+                    <p>{`${requestErrorText} Error code: ${errorCode}`}</p>
+                )}
                 {isRequestFatal && <p>{requestErrorText}</p>}
             </div>
         );
@@ -103,7 +105,11 @@ function App() {
             <div className="App">
                 <Search data={content} />
                 <Table>
-                    <TableHead filtering={filtering} allFilters={allFilters} />
+                    <TableHead
+                        filtering={filtering}
+                        allFilters={allFilters}
+                        activeFilter={activeFilter}
+                    />
                     <TableBody paginatedContent={paginatedList} />
                 </Table>
                 <Pagination />

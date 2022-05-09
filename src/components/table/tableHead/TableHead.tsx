@@ -4,16 +4,25 @@ import { FilterObj } from '../../../types/filterTypes';
 import './TableHead.scss';
 
 type Props = {
-    filtering: Function,
-    allFilters: FilterObj[],
+  filtering: Function;
+  allFilters: FilterObj[];
+  activeFilter: string;
 };
 
-export const TableHead: FC<Props> = ({ filtering, allFilters }) => {
+export const TableHead: FC<Props> = ({
+    filtering,
+    allFilters,
+    activeFilter,
+}) => {
     return (
         <thead>
             <tr>
-                {allFilters.map(((item) => {
+                {allFilters.map((item) => {
                     const { id, attributeName, headName } = item;
+                    let imgClassName = '';
+                    if (attributeName === activeFilter) {
+                        imgClassName = 'tableHead__content_activeFilter';
+                    }
                     return (
                         <th
                             key={`tableHeadItem-${id}`}
@@ -31,13 +40,12 @@ export const TableHead: FC<Props> = ({ filtering, allFilters }) => {
                             />
                             <div className="tableHead__content">
                                 <p className="tableHead__content__par">{headName}</p>
-                                <img src={filterImage} alt="filter" />
+                                <img className={imgClassName} src={filterImage} alt="filter" />
                             </div>
                         </th>
                     );
-                }))}
+                })}
             </tr>
         </thead>
-
     );
 };

@@ -32,6 +32,10 @@ th {
     gap: 31px;
 }
 
+.tableHead__content_activeFilter {
+    transform: rotate(0.5turn);
+}
+
 .tableHead__content__par {
     @include textStyle($fontSize: 14px, $fontColor: $headTextColor)
 }
