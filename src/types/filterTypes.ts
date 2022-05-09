@@ -1,7 +1,7 @@
 export interface FilterState {
     filteredList: any[],
     activeFilter: string,
-    allFilters: any,
+    allFilters: object[],
     isFiltered: boolean,
 }
 

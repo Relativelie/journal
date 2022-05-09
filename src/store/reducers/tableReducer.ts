@@ -1,8 +1,7 @@
 import { TableState, TableAction, TableActionTypes } from '../../types/tableTypes';
 
 const initialState: TableState = {
-    tableContent: [],
-    tableContentCurrent: [],
+    content: [],
 };
 
 export const tableReducer = (state = initialState, action: TableAction): TableState => {
@@ -10,15 +9,10 @@ export const tableReducer = (state = initialState, action: TableAction): TableSt
         case TableActionTypes.SAVE_TABLE_CONTENT: {
             return {
                 ...state,
-                tableContent: action.value,
+                content: action.value,
             };
         }
-        case TableActionTypes.CHANGE_TABLE_CONTENT: {
-            return {
-                ...state,
-                tableContentCurrent: action.value,
-            };
-        }
+
         default:
             return state;
     }
