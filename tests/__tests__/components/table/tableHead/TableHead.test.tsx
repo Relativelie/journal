@@ -6,12 +6,12 @@ describe('Table head component', () => {
     test('click to head(table filtering)', () => {
         const filtering: Function = jest.fn();
         render(
-            <thead>
+            <table>
                 <TableHead
                     filtering={filtering}
                     allFilters={[{ id: 1, attributeName: 'id', headName: 'ID' }]}
                 />
-            </thead>,
+            </table>,
         );
         const id = screen.getByTestId(/table head/i);
         fireEvent.click(id);

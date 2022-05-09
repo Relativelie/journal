@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component snapshot - table, tableHead, tableBody component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <main>
+        <table
+          class="table"
+        >
+          <thead>
+            <tr>
+              <th
+                class="tableHead id"
+              >
+                <div
+                  aria-label="filter values"
+                  class="tableHead__filteringBtn"
+                  data-filterby="id"
+                  data-testid="table head"
+                  role="button"
+                  tabindex="0"
+                />
+                <div
+                  class="tableHead__content"
+                >
+                  <p
+                    class="tableHead__content__par"
+                  >
+                    ID
+                  </p>
+                  <img
+                    alt="filter"
+                    src="test-file-stub"
+                  />
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="tableBody"
+            >
+              <td
+                class="tableBody__item tableBody__item_id"
+              >
+                1
+              </td>
+              <td
+                class="tableBody__item"
+              >
+                sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+              </td>
+              <td
+                class="tableBody__item"
+              >
+                <div>
+                  quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="tableBody"
+            >
+              <td
+                class="tableBody__item tableBody__item_id"
+              >
+                2
+              </td>
+              <td
+                class="tableBody__item"
+              >
+                qui est esse
+              </td>
+              <td
+                class="tableBody__item"
+              >
+                <div>
+                  est rerum tempore vitae
+sequi sint nihil reprehenderit dolor beatae ea dolores neque
+fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis
+qui aperiam non debitis possimus qui neque nisi nulla
+                </div>
+              </td>
+            </tr>
+            <tr
+              class="tableBody"
+            >
+              <td
+                class="tableBody__item tableBody__item_id"
+              >
+                3
+              </td>
+              <td
+                class="tableBody__item"
+              >
+                ea molestias quasi exercitationem repellat qui ipsa sit aut
+              </td>
+              <td
+                class="tableBody__item"
+              >
+                <div>
+                  et iusto sed quo iure
+voluptatem occaecati omnis eligendi aut ad
+voluptatem doloribus vel accusantium quis pariatur
+molestiae porro eius odio et labore et velit aut
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <main>
+      <table
+        class="table"
+      >
+        <thead>
+          <tr>
+            <th
+              class="tableHead id"
+            >
+              <div
+                aria-label="filter values"
+                class="tableHead__filteringBtn"
+                data-filterby="id"
+                data-testid="table head"
+                role="button"
+                tabindex="0"
+              />
+              <div
+                class="tableHead__content"
+              >
+                <p
+                  class="tableHead__content__par"
+                >
+                  ID
+                </p>
+                <img
+                  alt="filter"
+                  src="test-file-stub"
+                />
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="tableBody"
+          >
+            <td
+              class="tableBody__item tableBody__item_id"
+            >
+              1
+            </td>
+            <td
+              class="tableBody__item"
+            >
+              sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+            </td>
+            <td
+              class="tableBody__item"
+            >
+              <div>
+                quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="tableBody"
+          >
+            <td
+              class="tableBody__item tableBody__item_id"
+            >
+              2
+            </td>
+            <td
+              class="tableBody__item"
+            >
+              qui est esse
+            </td>
+            <td
+              class="tableBody__item"
+            >
+              <div>
+                est rerum tempore vitae
+sequi sint nihil reprehenderit dolor beatae ea dolores neque
+fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis
+qui aperiam non debitis possimus qui neque nisi nulla
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="tableBody"
+          >
+            <td
+              class="tableBody__item tableBody__item_id"
+            >
+              3
+            </td>
+            <td
+              class="tableBody__item"
+            >
+              ea molestias quasi exercitationem repellat qui ipsa sit aut
+            </td>
+            <td
+              class="tableBody__item"
+            >
+              <div>
+                et iusto sed quo iure
+voluptatem occaecati omnis eligendi aut ad
+voluptatem doloribus vel accusantium quis pariatur
+molestiae porro eius odio et labore et velit aut
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
