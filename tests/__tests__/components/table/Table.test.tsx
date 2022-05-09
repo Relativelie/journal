@@ -12,6 +12,7 @@ describe('Table component', () => {
                 <TableHead
                     filtering={filtering}
                     allFilters={[{ id: 1, attributeName: 'id', headName: 'ID' }]}
+                    activeFilter="id"
                 />
                 <TableBody paginatedContent={data} />
             </Table>,

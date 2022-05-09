@@ -10,6 +10,7 @@ describe('Table head component', () => {
                 <TableHead
                     filtering={filtering}
                     allFilters={[{ id: 1, attributeName: 'id', headName: 'ID' }]}
+                    activeFilter="id"
                 />
             </table>,
         );

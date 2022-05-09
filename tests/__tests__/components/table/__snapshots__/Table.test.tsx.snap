@@ -32,6 +32,7 @@ Object {
                   </p>
                   <img
                     alt="filter"
+                    class="tableHead__content_activeFilter"
                     src="test-file-stub"
                   />
                 </div>
@@ -144,6 +145,7 @@ molestiae porro eius odio et labore et velit aut
                 </p>
                 <img
                   alt="filter"
+                  class="tableHead__content_activeFilter"
                   src="test-file-stub"
                 />
               </div>
