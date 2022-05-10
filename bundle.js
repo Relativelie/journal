@@ -41855,7 +41855,7 @@ if (false) {} else {
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-module.exports = __webpack_require__.p + "./b4bb9b6e06cdcb61c69a.png";
+module.exports = __webpack_require__.p + "b4bb9b6e06cdcb61c69a.png";
 
 /***/ }),
 
@@ -41866,7 +41866,7 @@ module.exports = __webpack_require__.p + "./b4bb9b6e06cdcb61c69a.png";
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-module.exports = __webpack_require__.p + "./32e1275075254aef1925.png";
+module.exports = __webpack_require__.p + "32e1275075254aef1925.png";
 
 /***/ }),
 
